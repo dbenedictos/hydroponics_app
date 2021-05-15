@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:hydroponics_app/hydroponics_app.dart';
+import 'package:hydroponics_app/utility/app_starter.dart';
 
-void main() {
-  runApp(HydroponicsApp());
+void main() async {
+  startApp();
 }
