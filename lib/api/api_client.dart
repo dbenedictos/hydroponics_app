@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:async_redux/async_redux.dart';
 import 'package:dio/dio.dart';
 import 'package:hydroponics_app/state/actions/actions.dart';
-import 'package:hydroponics_app/utility/string_constants.dart';
+import 'package:hydroponics_app/utilities/string_constants.dart';
 
 class ApiClient {
   ApiClient({
