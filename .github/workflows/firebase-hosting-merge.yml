@@ -10,9 +10,7 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: git clone https://github.com/flutter/flutter.git -b stable
-      - run: export PATH="$PATH:`pwd`/flutter/bin"
-      - run: flutter upgrade
+      - run: git clone https://github.com/flutter/flutter.git -b stable && export PATH="$PATH:`pwd`/flutter/bin" && flutter upgrade
       - uses: actions/checkout@v2
       - run: flutter build web
       - uses: FirebaseExtended/action-hosting-deploy@v0
