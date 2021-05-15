@@ -1,6 +1,6 @@
 import 'package:hydroponics_app/api/api_client.dart';
 import 'package:hydroponics_app/api/handler/environment_handler.dart';
-import 'package:hydroponics_app/utility/app_config.dart';
+import 'package:hydroponics_app/utilities/app_config.dart';
 
 class ApiService {
   //Humidity Api
