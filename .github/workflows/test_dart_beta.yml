@@ -16,12 +16,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-#      - name: Build and Analyse Flutter
-#        run: git clone https://github.com/flutter/flutter.git -b stable && export PATH="$PATH:`pwd`/flutter/bin" && flutter upgrade && flutter pub get && flutter packages pub run build_runner build --delete-conflicting-outputs && flutter build web
-
-      - name: Notify slack
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        uses: abinoda/slack-action@master
-        with:
-          args: '{\"channel\":\"C021XMQ9CBX\",\"blocks\":[{\"type\": \"section\",\"text\": {\"type\": \"mrkdwn\",\"text\": \"Deployment Success 🎉\n*<https://wtf-what-the-farm.web.app/|What The Farms Web App>*\"}}]}'
+      - name: Build and Analyse Flutter
+        run: git clone https://github.com/flutter/flutter.git -b stable && export PATH="$PATH:`pwd`/flutter/bin" && flutter upgrade && flutter pub get && flutter packages pub run build_runner build --delete-conflicting-outputs && flutter build web
