@@ -19,8 +19,8 @@ jobs:
           channelId: live
           projectId: wtf-what-the-farm
       - name: Notify slack
-          env:
-            SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-          uses: abinoda/slack-action@master
-          with:
-            args: '{\"channel\":\"C021XMQ9CBX\",\"blocks\":[{\"type\": \"section\",\"text\": {\"type\": \"mrkdwn\",\"text\": \"Deployment Success 🎉\n*<https://wtf-what-the-farm.web.app/|What The Farms Web App>*\"}}]}'
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        uses: abinoda/slack-action@master
+        with:
+          args: '{\"channel\":\"C021XMQ9CBX\",\"blocks\":[{\"type\": \"section\",\"text\": {\"type\": \"mrkdwn\",\"text\": \"Deployment Success 🎉\n*<https://wtf-what-the-farm.web.app/|What The Farms Web App>*\"}}]}'
