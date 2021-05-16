@@ -18,13 +18,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Build Flutter
-        run: |
-        git clone https://github.com/flutter/flutter.git -b stable
-        export PATH="$PATH:`pwd`/flutter/bin" && flutter upgrade && flutter pub get
-        flutter packages pub run build_runner build --delete-conflicting-outputs
-        flutter analyze --fatal-infos
-        flutter test
+      - name: Build and Analyse Flutter
+        run: git clone https://github.com/flutter/flutter.git -b stable && export PATH="$PATH:`pwd`/flutter/bin" && flutter upgrade && flutter pub get && flutter packages pub run build_runner build --delete-conflicting-outputs && flutter analyze --fatal-infos && flutter test
 
       # Uncomment this step to verify the use of 'dart format' on each commit.
       # - name: Verify formatting
