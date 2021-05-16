@@ -30,6 +30,5 @@ analyzer:
         - lib/state/*.freezed.dart
         - lib/model/*.g.dart
         - lib/model/*.freezed.dart
-        - flutter/bin/cache/**
         # Exlude generated packages like API packages created from swagger
 
