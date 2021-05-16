@@ -16,8 +16,9 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WTF_WHAT_THE_FARM }}'
-          channelId: deploy
+          channelId: live
           projectId: wtf-what-the-farm
+          target: wtf-what-the-farms-beta,
       - name: Notify slack
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
