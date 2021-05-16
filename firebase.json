@@ -1,7 +1,6 @@
 {
   "hosting": [
     {
-      "target": "wtf-what-the-farm",
       "site": "wtf-what-the-farm",
       "public": "build/web",
       "ignore": [
@@ -17,7 +16,6 @@
       ]
     },
     {
-      "target": "wtf-what-the-farm-beta",
       "site": "wtf-what-the-farm-beta",
       "public": "build/web",
       "ignore": [
