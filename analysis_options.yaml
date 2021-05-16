@@ -30,5 +30,6 @@ analyzer:
         - lib/state/*.freezed.dart
         - lib/model/*.g.dart
         - lib/model/*.freezed.dart
+        - dark-sdk/lib/**
         # Exlude generated packages like API packages created from swagger
 
