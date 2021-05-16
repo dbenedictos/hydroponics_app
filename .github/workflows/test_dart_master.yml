@@ -3,11 +3,11 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Test Dart Beta PRs
+name: Test Dart Master PRs
 
 on:
   pull_request:
-    branches: [ beta ]
+    branches: [ master ]
 
 jobs:
   build:
