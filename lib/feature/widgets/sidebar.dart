@@ -28,6 +28,10 @@ class SideBar extends StatelessWidget {
             Icons.menu,
             size: 30,
           ),
+          Icon(
+            Icons.accessibility_rounded,
+            size: 30,
+          ),
         ],
       ),
     );
